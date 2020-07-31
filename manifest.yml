@@ -1,0 +1,4 @@
+---
+applications:
+ - name: clima-api
+   memory: 128M
