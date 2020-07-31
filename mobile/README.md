@@ -4,4 +4,4 @@
 
 Receive suggestions for improving your planting results based on the weather forecast.
 
-![screenshot](https://github.com/wandersonalwes/planti-app/blob/master/mobile/.github/presentation.gif)
+![screenshot](https://github.com/rodrigotsuchiya/planti-app/blob/master/mobile/.github/presentation.gif)
