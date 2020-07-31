@@ -1,0 +1,51 @@
+export default [
+  {
+    id: 1,
+    name: 'Beterraba',
+    harvestDays: 50,
+    image: 'https://i.imgur.com/sghI1za.png',
+    favorableClimate: ['clear_day', 'rain', 'cloud', 'cloudly_day', 'cloudly_night'],
+    unFavorableClimate: ['hail', 'snow'],
+  },
+  {
+    id: 3,
+    name: 'Cebolinha',
+    harvestDays: 10,
+    image: 'https://i.imgur.com/MnOo4RX.png',
+    favorableClimate: ['clear_day', 'rain', 'cloud', 'cloudly_day', 'cloudly_night'],
+    unFavorableClimate: ['hail', 'snow', 'storm'],
+  },
+  {
+    id: 4,
+    name: 'Rabanete',
+    harvestDays: 22,
+    image: 'https://i.imgur.com/7YNkiS7.png',
+    favorableClimate: ['clear_day', 'rain', 'cloud', 'cloudly_day', 'cloudly_night'],
+    unFavorableClimate: ['hail', 'snow', 'storm'],
+  },
+  {
+    id: 5,
+    name: 'Alface',
+    harvestDays: 30,
+    image: 'https://i.imgur.com/XLbf1sg.png',
+    favorableClimate: ['clear_day', 'rain', 'cloud', 'cloudly_day', 'cloudly_night'],
+    unFavorableClimate: ['hail', 'snow', 'storm'],
+  },
+  {
+    id: 6,
+    name: 'Espinafre',
+    harvestDays: 40,
+    image: 'https://i.imgur.com/qC3uAZy.png',
+    favorableClimate: ['clear_day', 'rain', 'cloud', 'cloudly_day', 'cloudly_night'],
+    unFavorableClimate: ['hail', 'snow', 'storm'],
+  },
+  {
+    id: 6,
+    name: 'Abóbora',
+    harvestDays: 40,
+    image: 'https://i.imgur.com/HRLWzc0.png',
+    favorableClimate: ['clear_day', 'rain', 'cloud', 'cloudly_day', 'cloudly_night'],
+    unFavorableClimate: ['hail', 'snow', 'storm'],
+  },
+
+]
