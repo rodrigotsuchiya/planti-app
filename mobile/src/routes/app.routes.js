@@ -3,17 +3,13 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import Home from '../pages/Home';
 
-import Start from './pages/Start';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import Home from './pages/Home';
-
-import Header from './components/Header';
+import Header from '../components/Header';
 
 const Stack = createStackNavigator();
 
-const Routes = () => {
+const AppRoutes = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
@@ -26,19 +22,6 @@ const Routes = () => {
 
         }
       }}>
-        <Stack.Screen options={{
-          header: () => <Header />,
-        }}
-          name="Start"
-          component={Start} />
-        <Stack.Screen options={{
-          headerBackTitle: 'Voltar',
-          headerTitle: 'Entrar',
-        }} name="SignIn" component={SignIn} />
-        <Stack.Screen options={{
-          headerBackTitle: 'Voltar',
-          headerTitle: 'Cadastrar',
-        }} name="SignUp" component={SignUp} />
         <Stack.Screen
           options={{
             header: () => <Header />,
@@ -50,4 +33,4 @@ const Routes = () => {
   );
 }
 
-export default Routes;
+export default AppRoutes;

@@ -3,10 +3,14 @@ import { View, StatusBar, Text } from 'react-native';
 import { Container, Btn, TextBtn, Title, Caption } from '../../components';
 import Card from '../../components/Card';
 
+import useAuth from '../../hooks/useAuth';
+
 import weather from '../../services/weather';
 import plants from '../../services/plants';
 
 const Home = () => {
+  const { user, signOut } = useAuth();
+
   const [data, setData] = useState();
   const [forecastConditions, setForecastConditions] = useState([]);
 
@@ -26,6 +30,8 @@ const Home = () => {
     <>
       <StatusBar barStyle="dark-content" backgroundColor="#F8FAFC" />
       <Container>
+
+        <Btn onPress={signOut}><TextBtn>Sair</TextBtn></Btn>
 
         <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
           <Title mb={5}>Bem vindo</Title>
