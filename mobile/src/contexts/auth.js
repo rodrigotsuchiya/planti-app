@@ -37,19 +37,14 @@ export default function AuthProvider({ children }) {
         password,
       });
 
-      setUser(response.data);
-      setError(response.status);
+      setUser(response.data.user);
+      setError(response.data.error);
 
-      await AsyncStorage.setItem('@Auth:user', JSON.stringify(response.data));
+      await AsyncStorage.setItem('@Auth:user', JSON.stringify(response.data.user));
 
       return;
     } catch (error) {
-      if (error.response.data.error === 'Password does not match!') {
-        setError('Senha não corresponde!');
-      }
-      if (error.response.data.error === 'User not found') {
-        setError('Usuário não encontrado');
-      }
+      console.log(error);
     }
   }
 
